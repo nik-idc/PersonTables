@@ -11,8 +11,8 @@ using PersonTablesDataAccess.Data;
 namespace PersonTablesDataAccess.Migrations
 {
     [DbContext(typeof(PeopleContext))]
-    [Migration("20230218102048_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230218170536_RecreateDB")]
+    partial class RecreateDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,22 +26,15 @@ namespace PersonTablesDataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("BirthdDate")
+                    b.Property<DateTime>("BirthDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Gender")
                         .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Patronim")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

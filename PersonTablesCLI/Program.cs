@@ -1,15 +1,14 @@
-﻿using PersonTablesDataAccess.Data;
-using PersonTablesDataAccess.Models;
+﻿using PersonTablesCLI;
 
-using PeopleContext context = new PeopleContext();
-
-Person vlad = new Person()
+try
 {
-    FirstName = "Vlad",
-    LastName = "Petrov",
-    Gender = "Male",
-    BirthdDate = new DateTime(2001, 10, 8, 2, 3, 5),
-};
-
-context.Add(vlad);
-context.SaveChanges();
+    DataManipulation.PerformAction(Environment.GetCommandLineArgs());
+}
+catch (ArgumentException exc)
+{
+    Console.WriteLine($"Error:\n{exc.Message}");
+}
+catch (Exception exc)
+{
+    Console.WriteLine($"Unknown error:\n{exc.Message}");
+}
