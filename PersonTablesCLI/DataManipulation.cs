@@ -83,6 +83,8 @@ namespace PersonTablesCLI
             int daysRange = (minAge - maxAge).Days; // Range between the max and min ages
             for (int i = 0; i < 1000000; i++)
             {
+                Console.WriteLine($"Creating person number {i + 1}\n");
+
                 // Create random person and add them to the table
                 Person newPerson = new()
                 {
@@ -91,6 +93,9 @@ namespace PersonTablesCLI
                     Gender = rng.NextDouble() > 0.5 ? "Male" : "Female",
                 };
                 context.Add(newPerson);
+
+                Console.WriteLine($"Created and added person {i + 1}\n");
+                Console.WriteLine("-----------------------------------");
             }
 
             context.SaveChanges();
