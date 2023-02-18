@@ -123,11 +123,11 @@ namespace PersonTablesCLI
             // Query
             using PeopleContext context = new();
 
-            var selectedMen = context.People.Where(p => p.FullName.StartsWith('f') && p.Gender == "Male");
+            var selectedMen = context.People.Where(p => p.FullName.StartsWith("f") && p.Gender == "Male").ToList();
 
             // Stop stopwatch and print elapsed time
             sw.Stop();
-            Console.WriteLine($"Men selection complete. Elapse time: {sw.Elapsed}");
+            Console.WriteLine($"Men selection complete.\nRows selected: {selectedMen.Count}\nElapse time: {sw.Elapsed}");
         }
 
         public static void PerformAction(string[] args)
