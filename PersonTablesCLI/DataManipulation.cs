@@ -98,7 +98,9 @@ namespace PersonTablesCLI
                 Console.WriteLine("-----------------------------------");
             }
 
+            Console.WriteLine("\nSaving changes...");
             context.SaveChanges();
+            Console.WriteLine("\nChanges saved");
         }
 
         private static void ShowMen()
