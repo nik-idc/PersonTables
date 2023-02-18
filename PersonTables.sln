@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonTablesCLI", "PersonTablesCLI\PersonTablesCLI.csproj", "{9F601065-4AB1-4DA6-A1FC-6CD942F86838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonTablesDataAccess", "PersonTablesDataAccess\PersonTablesDataAccess.csproj", "{DAC16B2D-BB8F-49BA-B774-ACC25298FD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F601065-4AB1-4DA6-A1FC-6CD942F86838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F601065-4AB1-4DA6-A1FC-6CD942F86838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F601065-4AB1-4DA6-A1FC-6CD942F86838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F601065-4AB1-4DA6-A1FC-6CD942F86838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC16B2D-BB8F-49BA-B774-ACC25298FD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC16B2D-BB8F-49BA-B774-ACC25298FD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC16B2D-BB8F-49BA-B774-ACC25298FD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC16B2D-BB8F-49BA-B774-ACC25298FD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF9426D7-0A2A-49F4-82E7-AE1524BAD427}
+	EndGlobalSection
+EndGlobal

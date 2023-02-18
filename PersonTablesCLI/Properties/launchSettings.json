@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PersonTablesCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "gey sex"
+    }
+  }
+}
