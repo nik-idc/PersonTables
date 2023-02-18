@@ -81,7 +81,7 @@ namespace PersonTablesCLI
             DateTime maxAge = new(1950, 1, 1); // Maximum age
             DateTime minAge = new(2023, 2, 18); // Minimum age
             int daysRange = (minAge - maxAge).Days; // Range between the max and min ages
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 // Create random person and add them to the table
                 Person newPerson = new()
@@ -105,11 +105,11 @@ namespace PersonTablesCLI
             // Query
             using PeopleContext context = new();
 
-            var selectedMen = context.People.Where(p => p.FullName.StartsWith('f') && p.Gender == "Male");
+            var selectedMen = context.People.Where(p => p.FullName.StartsWith("f") && p.Gender == "Male").ToList();
 
             // Stop stopwatch and print elapsed time
             sw.Stop();
-            Console.WriteLine($"Men selection complete. Elapse time: {sw.Elapsed}");
+            Console.WriteLine($"Men selection complete.\nRows selected: {selectedMen.Count}\nElapse time: {sw.Elapsed}");
         }
 
         private static void ShowMenFaster()

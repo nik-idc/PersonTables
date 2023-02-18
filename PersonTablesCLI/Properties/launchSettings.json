@@ -2,7 +2,7 @@
   "profiles": {
     "PersonTablesCLI": {
       "commandName": "Project",
-      "commandLineArgs": "1"
+      "commandLineArgs": "5"
     }
   }
 }
